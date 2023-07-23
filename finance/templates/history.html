@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Your Portfolio
+{% endblock %}
+
+{% block main %}
+    <div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th> Stocks </th>
+                    <th> Shares</th>
+                    <th> Price </th>
+                    <th> Date </th>
+                    <th> Type </th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in database %}
+                    <tr>
+                        <td> {{ row["Stock"] }} </td>
+                        <td> {{ row["Shares"] }}</td>
+                        <td> {{ row ["Price"] }} </td>
+                        <td> {{ row ["Date"] }} </td>
+                        <td> {{ row ["Type"] }} </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

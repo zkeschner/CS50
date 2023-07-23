@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Your Portfolio
+{% endblock %}
+
+{% block main %}
+    <div>
+        <h2> Cash: {{ cash }} </h2>
+
+        <h2> Total Assets: {{ totals }} </h2>
+    </div>
+    <div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th> Stocks </th>
+                    <th> Shares</th>
+                    <th> Price </th>
+                    <th> Total Value </th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in dictionary %}
+                    <tr>
+                        <td> {{ row["Stock"] }} </td>
+                        <td> {{ row["Shares"] }}</td>
+                        <td> {{ row ["price"] }} </td>
+                        <td> {{ row ["total value"] }} </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

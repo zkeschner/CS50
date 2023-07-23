@@ -1,0 +1,63 @@
+body {
+    text-align: center;
+    margin-top: .6em;
+    font-size: 3em;
+    font-family: "Times New Roman", "Times", "serif";
+}
+
+.buttonright {
+    margin-right: 300px;
+    margin-top: 150px;
+    text-align: center;
+    width: 25%
+
+}
+
+.buttonleft {
+    margin-left: 300px;
+    margin-top: 150px;
+    text-align: center;
+    width: 25%
+}
+
+* {
+    box-sizing: border-box
+}
+
+.lower300 {
+    margin-top: -100px
+}
+
+.bottomleft {
+    margin-top: 15.9em;
+    margin-left: 0;
+    margin-right: 30em;
+    background-color: white;
+}
+div.text{
+    text-align: left;
+    font-size: .5em;
+    margin-left: 20px;
+}
+
+.below{
+    margin-left: 100px;
+    margin-right: 100px
+}
+.centered{
+    text-align: center;
+}
+#left{
+    float: left;
+}
+#right{
+     float:right;
+}
+#middle{
+    float:middle;
+}
+p.text{
+    text-align: center;
+    font-size: .5em;
+    margin-left: 20px;
+}
